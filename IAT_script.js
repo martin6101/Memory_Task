@@ -26,7 +26,7 @@ define(['pipAPI', 'https://martin6101.github.io/Memory_Task/fullscript.js'], fun
 			name : 'Group A', //Attribute label
 			title : {
 				media : {word : 'Group A'}, //Name of the category presented in the task.
-				css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
+				css : {color:'#525252','font-size':'2em'}, //Style of the category title.
 				height : 7 //Used to position the "Or" in the combined block.
 			}, 
 			media : [ //Stimuli
@@ -38,14 +38,14 @@ define(['pipAPI', 'https://martin6101.github.io/Memory_Task/fullscript.js'], fun
 				{word: 'Grief'}
 			], 
 			//Can change color and size of the targets here.
-			css : {color:'#31b404','font-size':'3em'}
+			css : {color:'#525252','font-size':'2em'}
 			},
 		attribute2 : 
 			{
 			name : 'Group B', //Attribute label
 			title : {
 				media : {word : 'Group B'}, //Name of the category presented in the task.
-				css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
+				css : {color:'#525252','font-size':'2em'}, //Style of the category title.
 				height : 7 //Used to position the "Or" in the combined block.
 			}, 
 			media : [ //Stimuli
@@ -57,7 +57,7 @@ define(['pipAPI', 'https://martin6101.github.io/Memory_Task/fullscript.js'], fun
 				{word: 'Love'}
 			], 
 			//Can change color and size of the targets here.
-			css : {color:'#31b404','font-size':'3em'}
+			css : {color:'#525252','font-size':'2em'}
 			},
 
   base_url : {//Where are your images at?
