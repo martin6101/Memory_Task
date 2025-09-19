@@ -30,12 +30,9 @@ define(['pipAPI', 'https://martin6101.github.io/Memory_Task/fullscript.js'], fun
 				height : 7 //Used to position the "Or" in the combined block.
 			}, 
 			media : [ //Stimuli
-				{word: 'Bomb'},
-				{word: 'Abuse'},
-				{word: 'Sadness'},
-				{word: 'Pain'},
-				{word: 'Poison'},
-				{word: 'Grief'}
+				{word: 'Hostile'},
+				{word: 'Untrustworthy'},
+				{word: 'Dishonest'}
 			], 
 			//Can change color and size of the targets here.
 			css : {color:'#525252','font-size':'3em'}
@@ -49,12 +46,9 @@ define(['pipAPI', 'https://martin6101.github.io/Memory_Task/fullscript.js'], fun
 				height : 7 //Used to position the "Or" in the combined block.
 			}, 
 			media : [ //Stimuli
-				{word: 'Paradise'},
-				{word: 'Pleasure'},
-				{word: 'Cheer'},
-				{word: 'Wonderful'},
-				{word: 'Splendid'},
-				{word: 'Love'}
+				{word: 'Kind'},
+				{word: 'Trustworthy'},
+				{word: 'Honest'}
 			], 
 			//Can change color and size of the targets here.
 			css : {color:'#525252','font-size':'3em'}

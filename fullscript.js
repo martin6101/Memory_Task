@@ -55,7 +55,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					{word: 'Dishonest'}
 				], 
 				//Can change color and size of the targets here.
-				css : {color:'#525252','font-size':'2em'}
+				css : {color:'#525252','font-size':'3em'}
 			},
 			attribute2 : 
 			{
@@ -71,7 +71,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					{word: 'Honest'}
 				], 
 				//Can change color and size of the targets here.
-				css : {color:'#525252','font-size':'2em'}
+				css : {color:'#525252','font-size':'3em'}
 			},	
 			trialsByBlock : 
 			[//Each object in this array defines a block
