@@ -38,7 +38,7 @@ define(['pipAPI', 'https://martin6101.github.io/Memory_Task/fullscript.js'], fun
 				{word: 'Grief'}
 			], 
 			//Can change color and size of the targets here.
-			css : {color:'#525252','font-size':'2em'}
+			css : {color:'#525252','font-size':'3em'}
 			},
 		attribute2 : 
 			{
@@ -57,7 +57,7 @@ define(['pipAPI', 'https://martin6101.github.io/Memory_Task/fullscript.js'], fun
 				{word: 'Love'}
 			], 
 			//Can change color and size of the targets here.
-			css : {color:'#525252','font-size':'2em'}
+			css : {color:'#525252','font-size':'3em'}
 			},
 
   base_url : {//Where are your images at?

@@ -13,7 +13,6 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				maxWidth: 1200,
 				proportions : 0.7,
 				background: '#ffffff',
-				canvasBackground: '#ffffff',
 				css: {
 					'width': '1200px',
 					'height': '600px', 
@@ -81,47 +80,15 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					block : 1, //The block variable is not used later, but could help the user. 
 					//In each block, we can include a number of mini-blocks, to reduce repetition of same group/response.
 					miniBlocks : 1, //Set to 1 if don't need mini blocks. 0 will break the task.
-					singleAttTrials : 10, //Number of trials of the attribute that does not share key with the category (in a mini block).
-					sharedAttTrials : 10, //Number of trials of the attribute that shares key with the category (in a mini block).
+					singleAttTrials : 7, //Number of trials of the attribute that does not share key with the category (in a mini block).
+					sharedAttTrials : 7, //Number of trials of the attribute that shares key with the category (in a mini block).
 					categoryTrials : 0 // Number of trials of the category (in a mini-block). If 0, the label does not appear.
 					//Note: if no category trials, then attribute1, the one on the left, is considered the single attribute.
-				}, 
-				{ 
-					instHTML : '', 
-					block : 2, 
-					miniBlocks : 2, 
-					singleAttTrials : 10, 
-					sharedAttTrials : 7, 
-					categoryTrials : 7
-				}, 
-				{ 
-					instHTML : '', 
-					block : 3, 
-					miniBlocks : 2, 
-					singleAttTrials : 10, 
-					sharedAttTrials : 7, 
-					categoryTrials : 7
-				}, 
-				{ 
-					instHTML : '', 
-					block : 4, 
-					miniBlocks : 2, 
-					singleAttTrials : 10, 
-					sharedAttTrials : 7, 
-					categoryTrials : 7
-				}, 
-				{ 
-					instHTML : '', 
-					block : 5, 
-					miniBlocks : 2, 
-					singleAttTrials : 10, 
-					sharedAttTrials : 7, 
-					categoryTrials : 7
 				}
 			],
 			//All blocks show attribute1 on the left and attribute2 on the right. 
 			//blockOrder can be: 'startRight', 'startLeft', and 'random'
-			blockOrder : 'random', 
+			blockOrder : 'startLeft', 
 			//Change to 'startRight' if you want to start with category on the right in the first block. 
 			//Change to 'startLeft' if you want to start with category on the left in the first block. 
 			//Change to 'random' if you want to randomize whether the category starts on the left or on the right.
@@ -130,7 +97,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 
 			//If the switch parameter is 0 or smaller, we switch the side of the category every block. 
 			//If it is larger than 0, then we switch the category side only once, in the block specified in switchSideBlock.
-			switchSideBlock : 4, //By default, we switch on block 4 (i.e., after blocks 2 and 3 showed the first pairing condition).
+			switchSideBlock : 0, //By default, we switch on block 4 (i.e., after blocks 2 and 3 showed the first pairing condition).
 
 			base_url : {//Where are your images?
 				image : '/implicit/user/yba/pipexample/stiat/images/'
