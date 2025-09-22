@@ -119,7 +119,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
 			'Press the other key to continue.<p/>',
 			
-			finalText: 'You have completed this task. Press the <b>space bar</b> to continue.'
+			finalText: 'You have completed this task. Press the <b>space bar</b> to continue.',
 
 			//These are templates for the instructions in the task. 
 			//If you want more specific instructions for different blocks, 
