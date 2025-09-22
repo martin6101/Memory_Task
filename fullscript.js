@@ -119,9 +119,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
 			'Press the other key to continue.<p/>',
 			
-			finalText: '<span style="font-size:20px; color:#525252; font-family:arial">' +
-           				'You have completed this task. Press the <b>space bar</b> to continue.' +
-           				'</span>',
+			finalText: 'You have completed this task. Press the <b>space bar</b> to continue.'
 
 			//These are templates for the instructions in the task. 
 			//If you want more specific instructions for different blocks, 
@@ -729,8 +727,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			stimuli : [
 				{ 
 					inherit : 'instructions', 
-					css : {color:piCurrent.fontColor}, 
-					media:{html:'<div>' + piCurrent.finalText + '</div>'}
+					css : {'font-size':'1.4em', color:'#525252', lineHeight:1.2}, 
+      				media:{html:'<div>' + piCurrent.finalText + '</div>'}
 				},
 				{
 					data : {handle:'dummy', alias:'dummy'},
