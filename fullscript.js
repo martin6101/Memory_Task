@@ -46,13 +46,17 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				name : 'Group A', //Attribute name to be used for feedback and logging
 				title : {
 					media : {word : 'Group A'}, //Name of the category presented in the task.
-					css : {color:'#525252','font-size':'2em', 'font-weight':'bold'}, //Style of the category title.
+					css : {color:'#525252','font-size':'2em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
 				media : [ //Stimuli
 					{word: 'Hostile'},
 					{word: 'Untrustworthy'},
-					{word: 'Dishonest'}
+					{word: 'Dishonest'},
+					{image: 'https://uva.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_G7dzmAFBBZJ3Sam'},
+    				{image: 'https://uva.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_pq3rphyuaCYqef7'},
+   					{image: 'https://uva.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_ioIJ7nNskVNNeLB'},
+    				{image: 'https://uva.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_tAhYxhqgb3kaKms'}
 				], 
 				//Can change color and size of the targets here.
 				css : {color:'#525252','font-size':'3em'}
@@ -62,13 +66,17 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				name : 'Group B', //Attribute name to be used for feedback and logging
 				title : {
 					media : {word : 'Group B'}, //Name of the category presented in the task.
-					css : {color:'#525252','font-size':'2em', 'font-weight':'bold'}, //Style of the category title.
+					css : {color:'#525252','font-size':'2em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
 				media : [ //Stimuli
 					{word: 'Kind'},
 					{word: 'Trustworthy'},
-					{word: 'Honest'}
+					{word: 'Honest'},
+					{image: 'https://uva.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_LnG4QFtCiIOFhZE'},
+    				{image: 'https://uva.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_Wa2XUnE0KTDAFIC'},
+   					{image: 'https://uva.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_TcGQJa3hWQK6LoJ'},
+    				{image: 'https://uva.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_VO1bNhZlSPcta2n'}
 				], 
 				//Can change color and size of the targets here.
 				css : {color:'#525252','font-size':'3em'}
