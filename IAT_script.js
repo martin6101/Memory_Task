@@ -33,10 +33,10 @@ define(['pipAPI', 'https://martin6101.github.io/Memory_Task/fullscript.js'], fun
 				{word: 'Hostile'},
 				{word: 'Untrustworthy'},
 				{word: 'Dishonest'},
-				{image: 'https://uva.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_G7dzmAFBBZJ3Sam'},
-    			{image: 'https://uva.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_pq3rphyuaCYqef7'},
-   				{image: 'https://uva.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_ioIJ7nNskVNNeLB'},
-    			{image: 'https://uva.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_tAhYxhqgb3kaKms'}
+				{image: 'https://uva.fra1.qualtrics.com/CP/Graphic.php?IM=IM_G7dzmAFBBZJ3Sam'},
+    			{image: 'https://uva.fra1.qualtrics.com/CP/Graphic.php?IM=IM_pq3rphyuaCYqef7'},
+   				{image: 'https://uva.fra1.qualtrics.com/CP/Graphic.php?IM=IM_ioIJ7nNskVNNeLB'},
+    			{image: 'https://uva.fra1.qualtrics.com/CP/Graphic.php?IM=IM_tAhYxhqgb3kaKms'}
 			], 
 			//Can change color and size of the targets here.
 			css : {color:'#525252','font-size':'3em'}
@@ -53,10 +53,10 @@ define(['pipAPI', 'https://martin6101.github.io/Memory_Task/fullscript.js'], fun
 				{word: 'Kind'},
 				{word: 'Trustworthy'},
 				{word: 'Honest'},
-				{image: 'https://uva.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_LnG4QFtCiIOFhZE'},
-    			{image: 'https://uva.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_Wa2XUnE0KTDAFIC'},
-   				{image: 'https://uva.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_TcGQJa3hWQK6LoJ'},
-    			{image: 'https://uva.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_VO1bNhZlSPcta2n'}
+				{image: 'https://uva.fra1.qualtrics.com/CP/Graphic.php?IM=IM_LnG4QFtCiIOFhZE'},
+    			{image: 'https://uva.fra1.qualtrics.com/CP/Graphic.php?IM=IM_Wa2XUnE0KTDAFIC'},
+   				{image: 'https://uva.fra1.qualtrics.com/CP/Graphic.php?IM=IM_TcGQJa3hWQK6LoJ'},
+    			{image: 'https://uva.fra1.qualtrics.com/CP/Graphic.php?IM=IM_VO1bNhZlSPcta2n'}
 			], 
 			//Can change color and size of the targets here.
 			css : {color:'#525252','font-size':'3em'}
