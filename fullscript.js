@@ -46,7 +46,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				name : 'Group A', //Attribute name to be used for feedback and logging
 				title : {
 					media : {word : 'Group A'}, //Name of the category presented in the task.
-					css : {color:'#525252','font-size':'1.8em'}, //Style of the category title.
+					css : {color:'#525252','font-size':'2em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
 				media : [ //Stimuli
@@ -59,14 +59,14 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
     				{image: 'https://uva.fra1.qualtrics.com/CP/Graphic.php?IM=IM_tAhYxhqgb3kaKms'}
 				], 
 				//Can change color and size of the targets here.
-				css : {color:'#525252','font-size':'2em'}
+				css : {color:'#525252','font-size':'3em'}
 			},
 			attribute2 : 
 			{
 				name : 'Group B', //Attribute name to be used for feedback and logging
 				title : {
 					media : {word : 'Group B'}, //Name of the category presented in the task.
-					css : {color:'#525252','font-size':'1.8em'}, //Style of the category title.
+					css : {color:'#525252','font-size':'2em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
 				media : [ //Stimuli
@@ -79,7 +79,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
     				{image: 'https://uva.fra1.qualtrics.com/CP/Graphic.php?IM=IM_VO1bNhZlSPcta2n'}
 				], 
 				//Can change color and size of the targets here.
-				css : {color:'#525252','font-size':'2em'}
+				css : {color:'#525252','font-size':'3em'}
 			},	
 			trialsByBlock : 
 			[//Each object in this array defines a block
