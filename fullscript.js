@@ -110,7 +110,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			base_url : { image : '' },
 			ITIDuration : 250, //Duration between trials.
 			
-			fontColor : '#000000', //The color of messages and key reminders. 
+			fontColor : '#525252', //The color of messages and key reminders. 
 			
 			//Text and style for key instructions displayed about the category labels.
 			leftKeyText : 'Press "E" for', 
