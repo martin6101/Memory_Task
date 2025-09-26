@@ -46,7 +46,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				name : 'Group A', //Attribute name to be used for feedback and logging
 				title : {
 					media : {word : 'Group A'}, //Name of the category presented in the task.
-					css : {color:'#525252','font-size':'2em'}, //Style of the category title.
+					css : {color:'#525252','font-size':'1.8em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
 				media : [ //Stimuli
@@ -59,14 +59,14 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
     				{image: 'https://uva.fra1.qualtrics.com/CP/Graphic.php?IM=IM_tAhYxhqgb3kaKms'}
 				], 
 				//Can change color and size of the targets here.
-				css : {color:'#525252','font-size':'3em'}
+				css : {color:'#525252','font-size':'2em'}
 			},
 			attribute2 : 
 			{
 				name : 'Group B', //Attribute name to be used for feedback and logging
 				title : {
 					media : {word : 'Group B'}, //Name of the category presented in the task.
-					css : {color:'#525252','font-size':'2em'}, //Style of the category title.
+					css : {color:'#525252','font-size':'1.8em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
 				media : [ //Stimuli
@@ -79,7 +79,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
     				{image: 'https://uva.fra1.qualtrics.com/CP/Graphic.php?IM=IM_VO1bNhZlSPcta2n'}
 				], 
 				//Can change color and size of the targets here.
-				css : {color:'#525252','font-size':'3em'}
+				css : {color:'#525252','font-size':'2em'}
 			},	
 			trialsByBlock : 
 			[//Each object in this array defines a block
@@ -121,7 +121,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			orCss : {'font-size':'1.8em', color:'#000000'},
 
 			//Will appear at the bottom of the screen during trials.
-			remindErrorText : '<p align="center" style="font-size:"0.6em"; font-family:arial">' +
+			remindErrorText : '<p align="center" style="font-size:0.6em; font-family:arial; color:#525252;">' +
 			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
 			'Press the other key to continue.<p/>',
 			
@@ -498,7 +498,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			],
 
 			instructions: [
-				{css:{'font-size':'1.4em',color:'#525252', lineHeight:1.2}, nolog:true, location:{bottom:1}}
+				{css:{'font-size':'1em',color:'#525252', lineHeight:1.2}, nolog:true, location:{bottom:1}}
 			],
 
 			attribute1 : 
@@ -733,7 +733,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			stimuli : [
 				{ 
 					inherit : 'instructions', 
-					css : {'font-size':'1.4em', color:'#525252', lineHeight:1.2}, 
+					css : {'font-size':'1em', color:'#525252', lineHeight:1.2}, 
       				media:{html:'<div>' + piCurrent.finalText + '</div>'}
 				},
 				{

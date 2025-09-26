@@ -24,7 +24,7 @@ define(['pipAPI', 'https://martin6101.github.io/Memory_Task/fullscript.js'], fun
 
     attribute1 : {
       name : 'Group A',
-      title : { media : {word : 'Group A'}, css : {color:'#525252','font-size':'2em'}, height : 7 },
+      title : { media : {word : 'Group A'}, css : {color:'#525252','font-size':'1.8em'}, height : 7 },
       media : [
         {word: 'Hostile'},
         {word: 'Untrustworthy'},
@@ -34,12 +34,12 @@ define(['pipAPI', 'https://martin6101.github.io/Memory_Task/fullscript.js'], fun
         {image: 'https://uva.fra1.qualtrics.com/CP/Graphic.php?IM=IM_ioIJ7nNskVNNeLB'},
         {image: 'https://uva.fra1.qualtrics.com/CP/Graphic.php?IM=IM_tAhYxhqgb3kaKms'}
       ],
-      css : {color:'#525252','font-size':'3em'}
+      css : {color:'#525252','font-size':'2m'}
     },
 
     attribute2 : {
       name : 'Group B',
-      title : { media : {word : 'Group B'}, css : {color:'#525252','font-size':'2em'}, height : 7 },
+      title : { media : {word : 'Group B'}, css : {color:'#525252','font-size':'1.8em'}, height : 7 },
       media : [
         {word: 'Kind'},
         {word: 'Trustworthy'},
@@ -49,7 +49,7 @@ define(['pipAPI', 'https://martin6101.github.io/Memory_Task/fullscript.js'], fun
         {image: 'https://uva.fra1.qualtrics.com/CP/Graphic.php?IM=IM_TcGQJa3hWQK6LoJ'},
         {image: 'https://uva.fra1.qualtrics.com/CP/Graphic.php?IM=IM_VO1bNhZlSPcta2n'}
       ],
-      css : {color:'#525252','font-size':'3em'}
+      css : {color:'#525252','font-size':'2em'}
     },
 
     base_url : { image : '' }
