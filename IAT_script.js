@@ -34,7 +34,7 @@ define(['pipAPI', 'https://martin6101.github.io/Memory_Task/fullscript.js'], fun
         {image: 'https://uva.fra1.qualtrics.com/CP/Graphic.php?IM=IM_ioIJ7nNskVNNeLB'},
         {image: 'https://uva.fra1.qualtrics.com/CP/Graphic.php?IM=IM_tAhYxhqgb3kaKms'}
       ],
-      css : {color:'#525252','font-size':'3m'}
+      css : {color:'#525252','font-size':'3em'}
     },
 
     attribute2 : {

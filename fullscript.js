@@ -121,7 +121,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			orCss : {'font-size':'1.8em', color:'#000000'},
 
 			//Will appear at the bottom of the screen during trials.
-			remindErrorText : '<p align="center" style="font-size:0.6em; font-family:arial; color:#525252;">' +
+			remindErrorText : '<p align="center" style="font-size:"0.6em"; font-family:arial">' +
 			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
 			'Press the other key to continue.<p/>',
 			
@@ -498,7 +498,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			],
 
 			instructions: [
-				{css:{'font-size':'1em',color:'#525252', lineHeight:1.2}, nolog:true, location:{bottom:1}}
+				{css:{'font-size':'1.4em',color:'#525252', lineHeight:1.2}, nolog:true, location:{bottom:1}}
 			],
 
 			attribute1 : 
@@ -733,7 +733,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			stimuli : [
 				{ 
 					inherit : 'instructions', 
-					css : {'font-size':'1em', color:'#525252', lineHeight:1.2}, 
+					css : {'font-size':'1.4em', color:'#525252', lineHeight:1.2}, 
       				media:{html:'<div>' + piCurrent.finalText + '</div>'}
 				},
 				{
