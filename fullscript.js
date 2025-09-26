@@ -66,7 +66,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				name : 'Group B', //Attribute name to be used for feedback and logging
 				title : {
 					media : {word : 'Group B'}, //Name of the category presented in the task.
-					css : {color:'#525252','font-size':'2em', 'font-weight':'bold''}, //Style of the category title.
+					css : {color:'#525252','font-size':'2em', 'font-weight':'bold'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
 				media : [ //Stimuli
