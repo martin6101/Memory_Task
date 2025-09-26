@@ -46,7 +46,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				name : 'Group A', //Attribute name to be used for feedback and logging
 				title : {
 					media : {word : 'Group A'}, //Name of the category presented in the task.
-					css : {color:'#525252','font-size':'2em','font-weight':'bold'}, //Style of the category title.
+					css : {color:'#525252','font-size':'2em', 'font-weight':'bold'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
 				media : [ //Stimuli
@@ -66,7 +66,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				name : 'Group B', //Attribute name to be used for feedback and logging
 				title : {
 					media : {word : 'Group B'}, //Name of the category presented in the task.
-					css : {color:'#525252','font-size':'2em','font-weight':'bold'}, //Style of the category title.
+					css : {color:'#525252','font-size':'2em', 'font-weight':'bold''}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
 				media : [ //Stimuli
@@ -110,12 +110,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			base_url : { image : '' },
 			ITIDuration : 250, //Duration between trials.
 			
-			fontColor : '#525252', //The color of messages and key reminders. 
+			fontColor : '#000000', //The color of messages and key reminders. 
 			
 			//Text and style for key instructions displayed about the category labels.
 			leftKeyText : 'Press "E" for', 
 			rightKeyText : 'Press "I" for', 
-			keysCss : {'font-size':'0.8em', color:'#525252', 'font-weight':'bold'}, //'font-family':'courier',
+			keysCss : {'font-size':'0.8em', color:'#525252', 'font-weight':'bold''}, //'font-family':'courier',
 			//Text and style for the separator between the top and bottom category labels.
 			orText : 'or', 
 			orCss : {'font-size':'1.8em', color:'#000000'},
@@ -370,25 +370,14 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					]
 				},
 
-				// correct -> show green "Correct" for 1s, even if there was a prior error
+				// correct
 				{
-					conditions: [{type:'inputEqualsTrial', property:'corResp'}],
+					conditions: [{type:'inputEqualsTrial', property:'corResp'}],	// check if the input handle is equal to correct response (in the trial's data object)
 					actions: [
-						{type:'removeInput', handle:['left','right']},  // freeze input
-						{type:'hideStim', handle:'error'},              // hide the red X if it was shown
-						// optionally: {type:'hideStim', handle:'targetStim'}, // hide target if you prefer
-						{type:'showStim', handle:'correct'},            // show green "Correct"
-						{type:'setInput', input:{handle:'afterCorrect', on:'timeout', duration:1000}} // 1s
-					]
-				},
-
-				// after the 1s -> hide, log, start ITI, then end trial
-				{
-					conditions: [{type:'inputEquals', value:'afterCorrect'}],
-					actions: [
-						{type:'hideStim', handle:'All'},
-						{type:'log'},
-						{type:'setInput', input:{handle:'end', on:'timeout', duration:piCurrent.ITIDuration}}
+						{type:'removeInput',handle:['left','right']}, //Cannot respond anymore
+						{type:'hideStim', handle: 'All'},											// hide everything
+						{type:'log'},																// log this trial
+						{type:'setInput',input:{handle:'end', on:'timeout',duration:piCurrent.ITIDuration}} // trigger the "end action after ITI"
 					]
 				},
 
@@ -467,8 +456,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				stimuli : 
 				[
 					{inherit:{type:'exRandom',set:'attribute1'}},
-					{inherit:{set:'error'}},
-					{inherit:{set:'correct'}}
+					{inherit:{set:'error'}}
 				]
 			}],
 			rightAtt2: [{
@@ -477,8 +465,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				stimuli : 
 				[
 					{inherit:{type:'exRandom',set:'attribute2'}},
-					{inherit:{set:'error'}},
-					{inherit:{set:'correct'}}
+					{inherit:{set:'error'}}
 				]
 			}],
 			leftCat: [{
@@ -487,8 +474,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				stimuli : 
 				[
 					{inherit:{type:'exRandom',set:'category'}},
-					{inherit:{set:'error'}},
-					{inherit:{set:'correct'}}
+					{inherit:{set:'error'}}
 				]
 			}],
 			rightCat: [{
@@ -497,8 +483,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				stimuli : 
 				[
 					{inherit:{type:'exRandom',set:'category'}},
-					{inherit:{set:'error'}},
-					{inherit:{set:'correct'}}
+					{inherit:{set:'error'}}
 				]
 			}]	
 		});
@@ -513,7 +498,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			],
 
 			instructions: [
-				{css:{'font-size':'1.2em',color:'#525252', lineHeight:1.2}, nolog:true, location:{bottom:1}}
+				{css:{'font-size':'1.4em',color:'#525252', lineHeight:1.2}, nolog:true, location:{bottom:1}}
 			],
 
 			attribute1 : 
@@ -540,9 +525,6 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			// this stimulus used for giving feedback, in this case only the error notification
 			error : [{
 				data:{handle:'error'}, location: {top: 70}, css:{color:'red','font-size':'4em'}, media: {word:'X'}, nolog:true
-			}],
-			correct : [{
-  				data:{handle:'correct'}, location:{top: 70}, css:{color:'#31b404','font-size':'2.5em'},media:{word:'Correct'}, nolog:true
 			}], 			
 			dummyForLog : [{
 				data:{name:'dummyForLog', alias:'dummyForLog'}, 
@@ -751,7 +733,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			stimuli : [
 				{ 
 					inherit : 'instructions', 
-					css : {'font-size':'1.2em', color:'#525252', lineHeight:1.2}, 
+					css : {'font-size':'1.4em', color:'#525252', lineHeight:1.2}, 
       				media:{html:'<div>' + piCurrent.finalText + '</div>'}
 				},
 				{
