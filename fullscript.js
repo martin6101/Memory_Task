@@ -46,7 +46,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				name : 'Group A', //Attribute name to be used for feedback and logging
 				title : {
 					media : {word : 'Group A'}, //Name of the category presented in the task.
-					css : {color:'#525252','font-size':'2em'}, //Style of the category title.
+					css : {color:'#525252','font-size':'2em','font-weight':'bold'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
 				media : [ //Stimuli
@@ -66,7 +66,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				name : 'Group B', //Attribute name to be used for feedback and logging
 				title : {
 					media : {word : 'Group B'}, //Name of the category presented in the task.
-					css : {color:'#525252','font-size':'2em'}, //Style of the category title.
+					css : {color:'#525252','font-size':'2em','font-weight':'bold'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				}, 
 				media : [ //Stimuli
@@ -115,7 +115,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			//Text and style for key instructions displayed about the category labels.
 			leftKeyText : 'Press "E" for', 
 			rightKeyText : 'Press "I" for', 
-			keysCss : {'font-size':'0.8em', color:'#525252'}, //'font-family':'courier',
+			keysCss : {'font-size':'0.8em', color:'#525252', 'font-weight':'bold'}, //'font-family':'courier',
 			//Text and style for the separator between the top and bottom category labels.
 			orText : 'or', 
 			orCss : {'font-size':'1.8em', color:'#000000'},
