@@ -498,7 +498,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			],
 
 			instructions: [
-				{css:{'font-size':'1.4em',color:'#525252', lineHeight:1.2}, nolog:true, location:{bottom:1}}
+				{css:{'font-size':'1.2em',color:'#525252', lineHeight:1.2}, nolog:true, location:{bottom:1}}
 			],
 
 			attribute1 : 
@@ -733,7 +733,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			stimuli : [
 				{ 
 					inherit : 'instructions', 
-					css : {'font-size':'1.4em', color:'#525252', lineHeight:1.2}, 
+					css : {'font-size':'0.6', color:'#525252', lineHeight:1.2}, //1.4
       				media:{html:'<div>' + piCurrent.finalText + '</div>'}
 				},
 				{
