@@ -1,4 +1,4 @@
-define(['pipAPI', 'https://martin6101.github.io/Memory_Task/fullscript.js'], function(APIConstructor, stiatExtension){
+define(['pipAPI', 'https://martin6101.github.io/Memory_Task/fullscript_f_negA_posB.js'], function(APIConstructor, stiatExtension){
 
   var API = new APIConstructor();
 
