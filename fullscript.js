@@ -733,7 +733,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			stimuli : [
 				{ 
 					inherit : 'instructions', 
-					css : {'font-size':'0.6em', color:'#525252', lineHeight:1.2},
+					css : {'font-size':'1.2em', color:'#525252', lineHeight:1.2},
       				media:{html:'<div>' + piCurrent.finalText + '</div>'}
 				},
 				{
