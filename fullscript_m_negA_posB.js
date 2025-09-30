@@ -134,7 +134,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			// blockNum, nBlocks, attribute1, attribute2, and thecategory.
 			// Notice that this is HTML text.
 			instTemplatePractice : '<div style="text-align:center; font-family:arial">' +
-    			'Sort the words and avatars into the correct groups. <b>Please take your time</b>, it is most important that you place them correctly.<br/><br/>' +
+    			'In this memory task you will see words and avatars appear in the center of the screen, one at a time. Your task is to sort the right word and avatar in the correct group using the keys shown above.<br/><br/>' +
+				'<b>Please take your time</b>, it is most important that you place them correctly.<br/><br/>' +
     			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Correct your response to continue.<br/><br/>' +
     			'Press the <b>space bar</b> when you are ready to start.</div>',
 			instTemplateCategoryRight : '<div><p align="center" style="font-size:20px; font-family:arial">' +
