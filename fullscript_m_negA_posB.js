@@ -123,7 +123,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			//Will appear at the bottom of the screen during trials.
 			remindErrorText : '<p align="center" style="font-size:"0.6em"; font-family:arial">' +
 			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-			'Correct your response to continue.<p/>',
+			'Correct your response to continue.</p>',
 			
 			finalText: 'You have completed this task. Press the <b>space bar</b> to continue.',
 
@@ -497,7 +497,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			],
 
 			instructions: [
-				{css:{'font-size':'1.2em',color:'#525252', lineHeight:1.2}, nolog:true, location:{bottom:1}}
+				{css:{'font-size':'1.2em',color:'#525252', lineHeight:1.2}, nolog:true, location:{center:{top:50,left:50}}}
 			],
 
 			attribute1 : 
