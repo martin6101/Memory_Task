@@ -133,8 +133,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			// The following variables in the instructions text will be replaced: 
 			// blockNum, nBlocks, attribute1, attribute2, and thecategory.
 			// Notice that this is HTML text.
-			instTemplatePractice :   '<div style="text-align:center;font-family:arial;max-width:70%;margin:0 auto;">' +
-    			'<br/><br/>In this memory task you will see words and players appear in the center of the screen, one at a time. Your task is to sort the right word and player in the correct group using the keys shown above.<br/><br/>' +
+			instTemplatePractice :   '<div style="text-align:center;font-family:arial;max-width:80%;margin:0 auto;">' +
+    			'<br/><br/>In this memory task you will see words and players appear in the center of the screen, one at a time. Your task is to sort them in the correct group using the keys shown above.<br/><br/>' +
 				'<b>Please take your time, it is most important that you place the words and players correctly.</b><br/><br/>' +
     			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Correct your response to continue.<br/><br/>' +
     			'Press the <b>space bar</b> when you are ready to start.</div>',
