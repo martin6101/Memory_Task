@@ -121,9 +121,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			orCss : {'font-size':'1.8em', color:'#000000'},
 
 			//Will appear at the bottom of the screen during trials.
-			remindErrorText : '<p align="center" style="font-size:"0.6em"; font-family:arial">' +
+			remindErrorText : '<p align="center" style="font-size:0.6em; font-family:arial">' +
 			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-			'Correct your response to continue.<p/>',
+			'Correct your response to continue.</p>',
 			
 			finalText: 'You have completed this task. Press the <b>space bar</b> to continue.',
 
@@ -133,8 +133,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			// The following variables in the instructions text will be replaced: 
 			// blockNum, nBlocks, attribute1, attribute2, and thecategory.
 			// Notice that this is HTML text.
-			instTemplatePractice : '<div style="text-align:center; font-family:arial">' +
-    			'Sort the words and avatars into the correct groups. <b>Please take your time</b>, it is most important that you place them correctly.<br/><br/>' +
+			instTemplatePractice :   '<div style="text-align:center;font-family:arial;max-width:80%;margin:0 auto;">' +
+    			'<br/><br/>In this memory task you will see words and players appear in the center of the screen, one at a time. Your task is to sort them in the correct group using the keys shown above.<br/><br/>' +
+				'<b>Please take your time, it is most important that you place the words and players correctly.</b><br/><br/>' +
     			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Correct your response to continue.<br/><br/>' +
     			'Press the <b>space bar</b> when you are ready to start.</div>',
 			instTemplateCategoryRight : '<div><p align="center" style="font-size:20px; font-family:arial">' +
@@ -497,7 +498,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			],
 
 			instructions: [
-				{css:{'font-size':'1.2em',color:'#525252', lineHeight:1.2}, nolog:true, location:{bottom:1}}
+				{css:{'font-size':'1.2em',color:'#525252', lineHeight:1.2}, nolog:true, location:{center:{top:50,left:50}}}
 			],
 
 			attribute1 : 
