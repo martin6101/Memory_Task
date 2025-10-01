@@ -121,7 +121,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			orCss : {'font-size':'1.8em', color:'#000000'},
 
 			//Will appear at the bottom of the screen during trials.
-			remindErrorText : '<p align="center" style="font-size:0.6em; font-family:arial">' +
+			remindErrorText : '<p align="center" style="font-size:1em; font-family:arial">' +
 			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
 			'Correct your response to continue.</p>',
 			
